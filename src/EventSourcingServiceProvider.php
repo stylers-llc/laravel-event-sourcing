@@ -106,7 +106,8 @@ final class EventSourcingServiceProvider extends ServiceProvider
 
         (new DiscoverEventHandlers())
             ->within(config('event-sourcing.auto_discover_projectors_and_reactors'))
-            ->useBasePath(base_path())
+            ->useBasePath(base_path(config('event-sourcing.base_path', '')))
+            ->useRootNamespace(config('event-sourcing.root_namespace', ''))
             ->ignoringFiles(Composer::getAutoloadedFiles(base_path('composer.json')))
             ->addToProjectionist($projectionist);
     }

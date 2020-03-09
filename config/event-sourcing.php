@@ -1,11 +1,11 @@
 <?php
 
 return [
-
     /*
      * These directories will be scanned for projectors and reactors. They
      * will be registered to Projectionist automatically.
      */
+
     'auto_discover_projectors_and_reactors' => [
         app_path(),
     ],
@@ -91,4 +91,11 @@ return [
      * Here you can specify where the cache should be stored.
      */
     'cache_path' => storage_path('app/event-sourcing'),
+
+    /*
+    * These parameters will define the base namespace and path of the auto discover.
+    */
+
+    'root_namespace' => '',
+    'base_path' =>  '',
 ];
