@@ -3,9 +3,17 @@
 return [
 
     /*
+    * These parameters will define the base namespace and path of the auto discover below.
+    */
+
+    'root_namespace' => 'Modules\\',
+    'base_path' =>  'Modules',
+
+    /*
      * These directories will be scanned for projectors and reactors. They
      * will be registered to Projectionist automatically.
      */
+
     'auto_discover_projectors_and_reactors' => [
         app_path(),
     ],
