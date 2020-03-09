@@ -1,6 +1,5 @@
 {
-    "name": "spatie/laravel-event-sourcing",
-    "description": "The easiest way to get started with event sourcing in Laravel",
+    "name": "stylers-llc/laravel-event-sourcing",
     "keywords": [
         "spatie",
         "laravel-event-sourcing",
@@ -9,16 +8,6 @@
         "aggregates",
         "projectors",
         "reactors"
-    ],
-    "homepage": "https://github.com/spatie/laravel-event-sourcing",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Freek Van der Herten",
-            "email": "freek@spatie.be",
-            "homepage": "https://spatie.be",
-            "role": "Developer"
-        }
     ],
     "require": {
         "ext-json": "*",
